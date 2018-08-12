@@ -32,6 +32,7 @@ def testOneAtATime(randomList):
     binHeap1 = BinaryHeap()
     print("Random List = ", randomList)
     print("------------One at a time----------------")
+    #insert values one at a time
     for i in range(9):
         binHeap1.insert(randomList[i])
     showTree(binHeap1.getResults())
@@ -41,6 +42,7 @@ def testWithList(randomList):
     binHeap2 = BinaryHeap()
     print("Random List = ", randomList)
     print("-----------Passed as a list--------------")
+    #insert the whole list
     binHeap2.buildHeap(randomList)
     showTree(binHeap2.getResults())
 

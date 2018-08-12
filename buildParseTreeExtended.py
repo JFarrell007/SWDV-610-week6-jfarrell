@@ -102,6 +102,7 @@ def printexp(tree):
 
 
 def noSpaceTest():
+    #expression with no spaces
     noSpaces = "((7+3)*(5-2))"
     numParseTree = buildParseTree(noSpaces)
     print("No Space test expression.", noSpaces)
@@ -110,6 +111,7 @@ def noSpaceTest():
     inorder(numParseTree)
     
 def boolStatementTest():
+    #expression containing logical operators
     boolStatement = "(not((a and b)or(b and c)))"
     boolParseTree = buildParseTree(boolStatement)
     print("boolean test expression..", boolStatement)
